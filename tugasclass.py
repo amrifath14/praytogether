@@ -1,4 +1,4 @@
-class PencariNilaiMax:
+class MaxValueSeeker:
     def cari(self, daftar_bilangan):
         if not daftar_bilangan:
             raise ValueError("Daftar bilangan tidak boleh kosong")
@@ -9,6 +9,5 @@ class PencariNilaiMax:
                 nilai_max = bilangan
         return nilai_max
 
-
-nilaiMax = PencariNilaiMax()
-print(nilaiMax.cari([1, 4, 6, 10, 0, 2, 30]))  
+nilaiMax = MaxValueSeeker()
+print(nilaiMax.cari([1, 4, 6, 10, 0, 2, 30]))  # Output: 30
